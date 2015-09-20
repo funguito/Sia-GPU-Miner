@@ -109,7 +109,7 @@ int get_header_for_work(uint8_t *target, uint8_t *header) {
 	memcpy(header, inBuf.bytes+32,  80);
 
 	free(inBuf.bytes);
-
+	fprintf(header, "\nMining new block\n");
 	return 0;
 }
 
