@@ -147,6 +147,7 @@ double grindNonces(int cycles_per_iter) {
 			if (!submit_header(blockHeader)) {
 				// Only count block if submit succeeded.
 				blocks_mined++;
+				fprintf("\nFound block\n");
 			}
 			return -1;
 		}
